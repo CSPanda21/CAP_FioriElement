@@ -154,8 +154,8 @@ annotate service.IncidentFlow with @(UI : {
             Value : stepEndDate
         },
         {
-            $Type : 'UI.DataField',
-            Value : incident.assignedIndividual.fullName,
+            $Type : 'UI.DataFieldForAnnotation',
+            Target : incident.assignedIndividual.@Communication.Contact,
             Label : '{i18n>CreatedBy}'
         }
     ]
