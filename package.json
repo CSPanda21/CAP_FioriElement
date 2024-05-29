@@ -7,25 +7,35 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4"
+    "express": "^4",
+    "@sap/cds-hana": "^2",
+    "@sap/xssec": "^3"
   },
   "devDependencies": {
-    "@sap/ux-specification": "^1.120.10",
-    "sqlite3": "5.1.5"
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "UI5-1.124",
+    "sqlite3": "5.1.5",
+    "rimraf": "^5.0.5"
   },
   "scripts": {
-    "start": "npx cds run",
+    "start": "cds-serve",
     "watch": "npx cds watch",
-    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy fiori_elements_tutorial --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "cds": {
     "requires": {
       "db": {
-        "kind": "sql"
+        "kind": "hana"
       }
     },
     "odata": {
       "version": "v4"
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
     }
   },
   "sapux": [

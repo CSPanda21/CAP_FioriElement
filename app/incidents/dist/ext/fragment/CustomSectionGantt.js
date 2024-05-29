@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel","sap/gantt/misc/Format"],function(e,t,n){"use strict";return{fnTimeConverter:function(e){return n.abapTimestampToDate(e)}}});
+//# sourceMappingURL=CustomSectionGantt.js.map

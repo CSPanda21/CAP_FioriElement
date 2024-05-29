@@ -1,0 +1,1 @@
+{"version":3,"file":"CustomSectionGantt.js","names":["sap","ui","define","Controller","JSONModel","Format","fnTimeConverter","sTimestamp","abapTimestampToDate"],"sources":["CustomSectionGantt-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CACb,6BACA,8BACA,yBACE,SAAUC,EAAYC,EAAWC,GACnC,aAEA,MAAO,CACNC,gBAAiB,SAAUC,GAC1B,OAAOF,EAAOG,oBAAoBD,EACnC,EAEF","ignoreList":[]}

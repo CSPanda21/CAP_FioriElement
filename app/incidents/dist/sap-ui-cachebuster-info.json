@@ -1,0 +1,19 @@
+{
+  "ext/controller/ProcessFlow.controller.js.map": 1716971568323,
+  "ext/fragment/CustomSectionGantt.js": 1716454724344,
+  "ext/controller/ProcessFlowLanesAndNodes.json": 1716454724344,
+  "ext/controller/ProcessFlow.controller.js": 1716454724344,
+  "manifest.json": 1716971568110,
+  "Component.js": 1716454724344,
+  "ext/controller/ProcessFlow-dbg.controller.js": 1716454724344,
+  "i18n/i18n.properties": 1716971513576,
+  "ext/fragment/CustomSectionGantt-dbg.js": 1716454724344,
+  "ext/fragment/CustomSectionGantt.js.map": 1716971568318,
+  "Component-dbg.js": 1716454724344,
+  "Component.js.map": 1716971568316,
+  "Component-preload.js": 1716971568551,
+  "Component-preload.js.map": 1716971568551,
+  "ext/view/ProcessFlow.view.xml": 1716454724344,
+  "ext/fragment/CustomSectionGantt.fragment.xml": 1716454724344,
+  "index.html": 1716454724344
+}
