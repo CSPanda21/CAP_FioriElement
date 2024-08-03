@@ -23,6 +23,7 @@ annotate service.Incidents with {
     incidentStatus @Common : {
         Text            : incidentStatus.name,
         TextArrangement : #TextOnly,
+        FilterDefaultValue : '100000047',
         ValueListWithFixedValues
     };
   category @Common : {

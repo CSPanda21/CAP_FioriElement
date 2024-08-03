@@ -2,6 +2,8 @@
 
 Check the tutorial in https://developers.sap.com/group.fiori-tools-odata-v4-incident.html
 
+Check the tutorial to Deploy and Use Build workzone https://developers.sap.com/group.deploy-full-stack-cap-application.html
+
 **Steps to run the app:**
 Open command pallet and search "Application info". Then from there use preview app option.
 
@@ -20,6 +22,7 @@ This repository contains the sample OData V4 service material for the tutorials 
 
 https://community.sap.com/t5/technology-q-a/error-content-security-policy-failed-to-execute-module-factory-for-sap/qaq-p/13724272
 
+- For now the from the custom fragment removed the gantt chat controls. Added a simple button and it is working for now. 
 
 **Next Steps:**
 - Add Unit test
