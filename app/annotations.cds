@@ -64,6 +64,7 @@ annotate service.Incidents with @(UI : {
     //Facets for additional object header information (shown in the object page header)
     HeaderFacets                         : [{
         $Type  : 'UI.ReferenceFacet',
+        Label  : 'General Data',
         Target : '@UI.FieldGroup#HeaderGeneralInformation'
     }],
 
@@ -152,11 +153,11 @@ annotate service.IncidentFlow with @(UI : {
         {
             $Type : 'UI.DataField',
             Value : stepEndDate
-        },
-        {
-            $Type : 'UI.DataFieldForAnnotation',
-            Target : incident.assignedIndividual.@Communication.Contact,
-            Label : '{i18n>CreatedBy}'
         }
+        // {
+        //     $Type : 'UI.DataFieldForAnnotation',
+        //     Target : incident.assignedIndividual.@Communication.Contact,
+        //     Label : '{i18n>CreatedBy}'
+        // }
     ]
 });

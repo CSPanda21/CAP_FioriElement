@@ -25,5 +25,8 @@ https://community.sap.com/t5/technology-q-a/error-content-security-policy-failed
 - For now the from the custom fragment removed the gantt chat controls. Added a simple button and it is working for now. 
 
 **Next Steps:**
+- In the header facet of object page add a 'Radial Micro Chart' to show the days left for the next action. Check the below link.
+https://ui5.sap.com/#/topic/51eb56989df94267a75ebeff24093a5e
+- Unable to edit the priority of an incident. Check that.
 - Add Unit test
 - Add new functionalities
