@@ -62,11 +62,37 @@ annotate service.Incidents with @(UI : {
     },
 
     //Facets for additional object header information (shown in the object page header)
-    HeaderFacets                         : [{
+    HeaderFacets   : [
+        {
         $Type  : 'UI.ReferenceFacet',
         Label  : 'General Data',
         Target : '@UI.FieldGroup#HeaderGeneralInformation'
-    }],
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            ID : 'daysUnitlNextAction',
+            Target : '@UI.Chart#daysUnitlNextAction',
+        } ],
+
+    DataPoint #daysUnitlNextAction : {
+        Value : daysUnitlNextAction,
+        TargetValue : identifierFieldControl,
+    },
+    
+    Chart #daysUnitlNextAction : {
+        ChartType : #Donut,
+        Title : 'daysUnitlNextAction',
+        Measures : [
+            daysUnitlNextAction,
+        ],
+        MeasureAttributes : [
+            {
+                DataPoint : '@UI.DataPoint#daysUnitlNextAction',
+                Role : #Axis1,
+                Measure : daysUnitlNextAction,
+            },
+        ],
+    },    
 
     //Group of fields with an optional label
     //https://github.com/SAP/odata-vocabularies/blob/master/vocabularies/UI.md#FieldGroupType

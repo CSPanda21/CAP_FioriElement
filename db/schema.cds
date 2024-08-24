@@ -57,6 +57,7 @@ entity Incidents : managed, identified {
                               on incidentProcessTimeline.incident = $self;
   isDraft                 : TechnicalBooleanFlag not null default false;
   identifierFieldControl  : TechnicalFieldControlFlag not null default 7; // 7 = #Mandatory;
+  daysUnitlNextAction     : Integer default 2;
 }
 
 entity IncidentFlow : managed {
