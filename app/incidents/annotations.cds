@@ -21,3 +21,8 @@ annotate service.Incidents with {
     }
 };
 
+annotate service.Incidents with {
+    description @UI.MultiLineText    : true ;
+    title       @Common.FieldControl : #ReadOnly
+};
+

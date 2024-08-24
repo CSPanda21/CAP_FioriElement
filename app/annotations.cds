@@ -101,6 +101,14 @@ annotate service.Incidents with @(UI : {
                 $Type : 'UI.DataField',
                 Value : title
             },
+            {
+                $Type : 'UI.DataField',
+                Value : priority_code,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : description,
+            }
             //insert your field group enhancement here 
             
        ]
